@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags for SEO & accessibility -->
+    <meta name="description" content="Stay informed about global cyberattacks. Learn about recent threats, how they affect users worldwide, and strategies to protect yourself from evolving cyber risks.">
+    <meta name="keywords" content="Cyber, Awareness, Stay Safe Online, Cyber Awareness, Cyber Security, Global Attacks, global">
+    <meta name="author" content="ultrasploit">
+    <meta name="theme-color" content="#0e0e0e">
+
+    <!-- Favicon & Logo -->
+    <link rel="shortcut icon" href="./static/assets/logo.png" type="image/png">
+    <link rel="icon" type="image/png" href="./static/assets/logo.png" sizes="84x84">
+    <link rel="favicon" href="./static/assets/logo.png" type="image/png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./static/stylesheets/base.css">
+    <link rel="stylesheet" href="./static/stylesheets/global.animations.css">
+    <link rel="stylesheet" href="./static/stylesheets/global.css">
+
+    <!-- Javascripts -->
+    <script src="./static/javascripts/base.js" defer></script>
+
+    <title>Global Attacks: Cyber Awareness</title>
+</head>
+<body>
+
+    <!-- Header & The Navigation -->
+    <header class="landingNav">
+        <h1><a href="./">Cyber Awareness</a></h1>
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="basics.html">Cybersecurity Basics</a></li>
+                <li><a href="global.html">Global Attacks</a></li>
+                <li><a href="tools.html">Tools & Resources</a></li>
+            </ul>
+        </nav>
+
+        <div id="mobile_menu_btn"><span></span><span></span><span></span></div>
+    </header>
+
+    <!-- Main Content Of The Page -->
+    <main>
+        <section class="hero">
+            <div class="header"></div>
+            <div class="content">
+                <h2 class="textslideFromLeft" delay="5">Global Attacks</h2>
+                <p class="textslideFromRight" delay="5">Navigating the Cyber Threat Landscape</p>
+    
+                <button class="textFadeUp" onclick="scrollToIntro();">Learn About Global Cyber Attacks</button>
+            </div>
+
+            <iframe width="100%" height="100%" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0"></iframe>
+        </section>
+
+        <section class="con">
+            <div class="block live">
+                <h2>CYBERTHREAT LIVE MAP</h2>
+
+                <div class="links">
+                    <a href="https://cybermap.kaspersky.com/" target="_blank">Kaspersky Cybethreat Live Map</a>
+                    <a href="https://threatmap.checkpoint.com/" target="_blank">Checkpoint Cybethreat Map</a>
+                    <a href="https://livethreatmap.radware.com/" target="_blank">Radware Live Threat Map</a>
+                    <a href="https://threatmap.bitdefender.com/" target="_blank">Bitdefender Threat Map</a>
+                </div>
+                
+            </div>
+
+            <div class="block intro">
+                <h2>Common Global Cyber Attacks</h2>
+                <ul>
+                    <li><strong>Ransomware:</strong> A type of malware that encrypts files and demands a ransom for their decryption. Notable examples: WannaCry, NotPetya.</li>
+                    <li><strong>Phishing Attacks:</strong> Fraudulent communications designed to trick individuals into revealing sensitive information. Often seen in emails, websites, or messages.</li>
+                    <li><strong>Denial of Service (DoS) Attacks:</strong> Attackers overwhelm a network or server with traffic, making it inaccessible. A distributed variant (DDoS) amplifies the effect.</li>
+                    <li><strong>SQL Injection:</strong> Attackers insert malicious SQL code into a website's database, gaining unauthorized access to sensitive data.</li>
+                    <li><strong>Man-in-the-Middle (MitM) Attacks:</strong> Interception of communication between two parties to steal data or inject malicious content.</li>
+                    <li><strong>Malware:</strong> Software specifically designed to harm or exploit devices. Examples include viruses, worms, trojans, and spyware.</li>
+                    <li><strong>Cryptojacking:</strong> The unauthorized use of a victim’s device to mine cryptocurrency.</li>
+                    <li><strong>Insider Threats:</strong> Employees or contractors misuse their access to company data or systems to compromise security.</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <h2>How to Protect Yourself</h2>
+                <p>Protecting yourself from global cyber threats requires a combination of awareness and action. Here are a few key strategies:</p>
+                <ul>
+                    <li>Regularly update your software and security patches to fix vulnerabilities.</li>
+                    <li>Use strong passwords and enable multi-factor authentication wherever possible.</li>
+                    <li>Be cautious when clicking on links or downloading files, especially from unknown sources.</li>
+                    <li>Backup important data frequently to avoid data loss in case of ransomware attacks.</li>
+                    <li>Secure your network by using a VPN and strong Wi-Fi encryption (WPA3).</li>
+                </ul>
+            </div>
+        </section>
+
+        
+        <footer>
+            
+            <div class="title">
+                <h1><a href="./">Cyber Awareness</a></h1>
+                <p>Empowering Sri Lankans to Stay Safe Online</p>
+            </div>
+
+            <ul>
+                <li><a href="./">Home Page</a></li>
+                <li><a href="basics.html">Cybersecurity Basics</a></li>
+            </ul>
+            
+            <ul>
+                <li><a href="global.html">Global Attacks</a></li>
+                <li><a href="tools.html">Tools & Resources</a></li>
+            </ul>
+
+            <p class="copy">&copy; 2022 Cyber Awareness. All rights reserved.</p>
+
+        </footer>
+    </main>
+
+    <script>
+        function scrollToIntro () {
+            const y = document.querySelector('.block.live').getBoundingClientRect().top + window.scrollY;
+            window.scroll({
+                top: y - 100,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

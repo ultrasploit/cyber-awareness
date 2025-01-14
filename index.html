@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags for SEO & accessibility -->
+    <meta name="description" content="Hello! I'm Ultrasploit, a passionate web developer and programmer from Sri Lanka. With over 5 years of experience, I specialize in creating innovative and dynamic web solutions. My expertise spans HTML, CSS, JavaScript, PHP, and Python, enabling me to build responsive websites, interactive applications, and powerful backend systems. 💻🚀 In addition to web development, I actively work with frameworks like Flask for web applications and PyQt and Kivy for crafting engaging graphical user interfaces (GUIs). My diverse skill set allows me to develop both sleek frontends and robust backends, catering to a broad range of user needs. 🖥️✨ I’m committed to delivering high-quality, user-focused designs and efficient code, ensuring exceptional service for every project I take on. 🎯🔧">
+    <meta name="keywords" content="Cyber, Awareness, Stay Safe Online, Cyber Awareness, Cyber Security">
+    <meta name="author" content="ultrasploit">
+    <meta name="theme-color" content="#0e0e0e">
+
+    <!-- Favicon & Logo -->
+    <link rel="shortcut icon" href="./static/assets/logo.png" type="image/png">
+    <link rel="icon" type="image/png" href="./static/assets/logo.png" sizes="84x84">
+    <link rel="favicon" href="./static/assets/logo.png" type="image/png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./static/stylesheets/base.css">
+    <link rel="stylesheet" href="./static/stylesheets/global.animations.css">
+    <link rel="stylesheet" href="./static/stylesheets/index.css">
+
+    <!-- Javascripts -->
+     <script src="./static/javascripts/base.js" defer></script>
+
+    <title>Welcome to Cyber Awareness: Stay Safe Online</title>
+</head>
+<body>
+
+    <!-- Header & The Navigation -->
+    <header class="landingNav">
+        <h1><a href="./">Cyber Awareness</a></h1>
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="basics.html">Cybersecurity Basics</a></li>
+                <li><a href="global.html">Global Attacks</a></li>
+                <li><a href="tools.html">Tools & Resources</a></li>
+            </ul>
+        </nav>
+
+        <div id="mobile_menu_btn"><span></span><span></span><span></span></div>
+    </header>
+
+    <!-- Main Content Of The Page -->
+    <main>
+        <!--The Hero Section -->
+        <section class="hero">
+            <h2 class="textslideFromLeft" delay="5">Welcome to Cyber Awareness</h2>
+            <p class="textslideFromRight" delay="5">Empowering Sri Lankans to Stay Safe Online</p>
+
+            <button class="textFadeUp" onclick="scrollToIntro();">See why Cybersecurity Matters</button>
+        </section>
+
+        <!-- The Intro Section -->
+        <section class="intro">
+            <h3>Why Cybersecurity Matters?</h3>
+            
+            <p>
+                <img src="./static/assets/cyber_awareness.jpg" alt="Cyber Awareness">
+                Cybersecurity is vital in today's digital age as it protects individuals and organizations from the increasing risks of cyber threats. With the growing reliance on technology for communication, business, and daily activities, safeguarding sensitive information has become crucial to preventing data breaches, identity theft, and financial losses. In Sri Lanka, where digital adoption is rapidly expanding, the need for robust cybersecurity measures is more important than ever to combat phishing attacks, online scams, and other cybercrimes. Prioritizing cybersecurity ensures a safer digital environment, builds trust in online platforms, and empowers individuals to make informed and secure choices online.
+            </p>
+        </section>
+
+        <section class="cta">
+            <h4>Get Started Today</h4>
+            <p>Ready to learn about cybersecurity? Take the first step towards staying safe online! Select a section below to begin learning about cybersecurity and how to protect yourself from digital threats.</p>
+
+            <div class="buttons">
+                <button onclick="window.location.href='basics.html'">Learn Cybersecurity Basics</button>
+                <button onclick="window.location.href='quiz.html'">Take the Cybersecurity Quiz</button>
+            </div>
+        </section>
+
+        <!-- News section -->
+        <section class="news">
+            <h5>Latest Updates</h5>
+
+            <div class="links">
+                <a href="#">New Phishing Scams Targeting Sri Lankan Users</a>
+                <a href="#">How to Protect Your Online Banking Accounts</a>
+                <a href="#">Understanding Sri Lanka's Cybersecurity Law</a>
+                <a href="#">Top 5 Cybersecurity Threats in 2025</a>
+                <a href="#">How to Protect Your Personal Data Online</a>
+            </div>
+        </section>
+
+        <section class="tools">
+            <h6>Explore Tools & Resources</h6>
+            <p>Discover essential tools and resources to enhance your online safety. From password managers to antivirus programs, these solutions are designed to help you stay secure in the digital world. Protect yourself and your loved ones with trusted cybersecurity tools tailored for every user.</p>
+            <button>Explore Tools & Resources</button>
+
+        </section>
+        
+        <!-- The footer -->
+        <footer>
+            
+            <div class="title">
+                <h1><a href="./">Cyber Awareness</a></h1>
+                <p>Empowering Sri Lankans to Stay Safe Online</p>
+            </div>
+
+            <ul>
+                <li><a href="basics.html">Cybersecurity Basics</a></li>
+                <li><a href="global.html">Global Attacks</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#" class="scrollToNews">Latest Updates</a></li>
+                <li><a href="tools.html">Tools & Resources</a></li>
+            </ul>
+
+            <p class="copy">&copy; 2022 Cyber Awareness. All rights reserved.</p>
+
+        </footer>
+    </main>
+
+    <script>
+        function scrollToIntro () {
+            const y = document.querySelector('section.intro').getBoundingClientRect().top + window.scrollY;
+            window.scroll({
+                top: y - 100,
+                behavior: 'smooth'
+            });
+        }
+        
+        document.querySelector('a.scrollToNews').addEventListener('click', function(e) {
+            e.preventDefault();
+        
+            const y = document.querySelector('section.news').getBoundingClientRect().top + window.scrollY;
+            window.scroll({
+                top: y - 200,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

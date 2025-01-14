@@ -1,0 +1,67 @@
+/* GLobal Animations */
+
+.landingNav {
+    animation: landNav 1s ease-out;
+}
+
+@keyframes landNav {
+    from {
+        transform: translateY(-100%);
+
+    }   to {
+        transform: translateY(0);
+    }
+}
+
+.textslideFromLeft {
+    animation: slideFrom .8s 1s ease-out forwards;
+    overflow: hidden;
+
+    transform: translateX(-100%);
+    filter: blur(5px);
+    opacity: 0;
+}
+.textslideFromRight {
+    animation: slideFrom .8s 1s ease-out forwards;
+    overflow: hidden;
+
+    transform: translateX(100%);
+    filter: blur(5px);
+    opacity: 0;
+}
+
+@keyframes slideFrom {
+    to {
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+
+    }
+}
+
+.textFadeUp {
+    animation: FadeUp 1.2s 1.5s ease-out forwards;
+    overflow: hidden;
+
+    transform: translateY(20px);
+    opacity: 0;
+
+    filter: blur(5px);
+}
+
+@keyframes FadeUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+        filter: blur(5px);
+
+    }   50%{
+        filter: blur(1px);
+
+    }   100% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+
+    }
+}

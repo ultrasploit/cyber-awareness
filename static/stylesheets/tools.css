@@ -1,0 +1,184 @@
+/* Sections */
+section.hero {
+    width: 100%;
+    height: 100svh;
+
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+}   section.hero h2 {
+    font-size: 35px;
+    margin-top: 20px;
+
+    letter-spacing: 3.5px;
+
+    text-align: center;
+    transition: all .3s ease-out;
+
+}   section.hero p {
+    font-size: 15px;
+    letter-spacing: .8px;
+
+    text-align: center;
+    transition: all .3s ease-out;
+
+}   section.hero button {
+    font-size: 18px;
+    margin-top: 20px;
+
+    outline: none;
+    border: none;
+
+    padding: 10px;
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+
+    transition: all .3s ease-out;
+
+}   section.hero button:hover {
+    background-color: blue;
+}
+
+@media only screen and (max-width: 670px) {
+    section.hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/mobile-wallpaper1.jpg);
+    }
+}
+@media only screen and (max-width: 470px) {
+    section.hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/mobile-wallpaper2.jpg);
+
+    }   section.hero h2 {
+        font-size: 25px;
+
+    }   section.hero p {
+        font-size: 11px;
+
+    }
+}
+
+section.con {
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 30px;
+    transition: .3s ease-out;
+
+}   section.con .block {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 10px;
+
+}   section.con .block h2 {
+    font-size: 25px;
+    color: #fff;
+
+}   section.con .block ul {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    list-style: none;
+    gap: 10px;
+
+}   section.con .block ul li {
+    width: 100%;
+    height: auto;
+
+    padding: 10px;
+    background-color: #141414;
+
+    border-radius: 2.5px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}   section.con .block ul li a {
+    font-size: 15px;
+    color: var(--highlight-color);
+
+    width: 100px;
+
+}   section.con .block ul li p {
+    position: relative;
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: row;
+    
+    gap: 10px;
+
+}   section.con .block ul li p::before {
+    position: relative;
+    content: '-';
+
+    display: block;
+    
+    font-size: 15px;
+
+}   section.con .block.nonN ul li a {
+    width: auto;
+
+}   section.con .block.nonN ul li p::before {
+    display: none;
+
+}   section.con .block.nonN ul li {
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+@media only screen and (max-width: 620px){
+    section.con {
+        padding: 30px 10px 30px 10px;
+
+    }   section.con .block h2 {
+        font-size: 20px;
+        padding-left: 10px;
+
+    }   section.con .block ul li {
+        flex-direction: column;
+        gap: 5px;
+        
+    }   section.con .block ul li p {
+        font-size: 12px;
+
+    }   section.con .block ul li p::before {
+        display: none;
+    }
+}

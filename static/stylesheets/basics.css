@@ -1,0 +1,162 @@
+/* Sections */
+section.hero {
+    width: 100%;
+    height: 100svh;
+
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+}   section.hero h2 {
+    font-size: 35px;
+    margin-top: 20px;
+
+    text-align: center;
+    transition: all .3s ease-out;
+
+}   section.hero p {
+    font-size: 15px;
+    letter-spacing: .8px;
+
+    text-align: center;
+    transition: all .3s ease-out;
+
+}   section.hero button {
+    font-size: 18px;
+    margin-top: 20px;
+
+    outline: none;
+    border: none;
+
+    padding: 10px;
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+
+    transition: all .3s ease-out;
+
+}   section.hero button:hover {
+    background-color: blue;
+}
+
+@media only screen and (max-width: 670px) {
+    section.hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/mobile-wallpaper1.jpg);
+    }
+}
+@media only screen and (max-width: 470px) {
+    section.hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/mobile-wallpaper2.jpg);
+
+    }   section.hero h2 {
+        font-size: 25px;
+
+    }   section.hero p {
+        font-size: 10px;
+
+    }
+}
+
+/* Intro Section */
+section.intro {
+    width: 100%;
+    height: auto;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/attack.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}   section.intro h3 {
+    font-size: 20px;
+    font-weight: 800;
+
+}   section.intro p {
+    font-size: 15px;
+    font-weight: 200;
+
+    text-wrap: wrap;
+
+    width: 100%;
+
+}
+
+section.con {
+    width: 100%;
+    height: max-content;
+
+    padding: 30px;
+    background-color: #000;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 30px;
+
+}   section.con .block {
+    width: 100%;
+    height: auto;
+
+}   section.con h2 {
+    width: 100%;
+    height: auto;
+
+    padding: 10px;
+    background-color: #252525;
+
+    border-radius: 2.5px;
+    user-select: text;
+
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}   section.con ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+}   section.con ul li{
+    font-size: 15px;
+
+}   section.con p{
+    font-size: 15px;
+
+}   section.con a {
+    font-size: 15px;
+    color: var(--highlight-color);
+}
+
+
+@media only screen and (max-width: 850px) {
+    section.intro .content {
+        flex-direction: column;
+
+    } section.intro .content div.img {
+        width: 100%;
+        height: 250px;
+    } 
+}

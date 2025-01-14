@@ -1,0 +1,282 @@
+/* Sections */
+section.hero {
+    width: 100%;
+    height: 100svh;
+
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+}   section.hero h2 {
+    font-size: 35px;
+    margin-top: 20px;
+
+    text-align: center;
+    transition: all .3s ease-out;
+
+}   section.hero p {
+    font-size: 15px;
+    letter-spacing: 3.8px;
+
+    text-align: center;
+    transition: all .3s ease-out;
+
+}   section.hero button {
+    font-size: 18px;
+    margin-top: 20px;
+
+    outline: none;
+    border: none;
+
+    padding: 10px;
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+
+    transition: all .3s ease-out;
+
+}   section.hero button:hover {
+    background-color: blue;
+}
+
+@media only screen and (max-width: 670px) {
+    section.hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/mobile-wallpaper1.jpg);
+    }
+}
+@media only screen and (max-width: 470px) {
+    section.hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/mobile-wallpaper2.jpg);
+    }
+}
+
+/* Intro Section */
+section.intro {
+    width: 100%;
+    height: auto;
+
+    padding: 50px 30px 80px 30px;
+
+}   section.intro h3 {
+    font-size: 20px;
+    font-weight: 800;
+
+    margin-bottom: 20px;
+
+}   section.intro p {
+    font-size: 15px;
+    font-weight: 200;
+
+}   section.intro p img {
+    float: right;
+    width: 300px;
+
+    margin-left: 30px;
+
+}
+
+section.cta {
+    width: 100%;
+    height: auto;
+
+    padding: 50px 30px 50px 30px;
+
+    background-color: #000000;
+    background-image: url(../assets/cyber.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}   section.cta h4 {
+    font-size: 20px;
+    font-weight: 800;
+
+}   section.cta p {
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 20px;
+
+}   section.cta .buttons {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+    gap: 5px;
+
+}   section.cta button {
+    width: 320px;
+    font-size: 18px;
+
+    outline: none;
+    border: none;
+
+    background-color: var(--highlight-color);
+
+    padding: 10px;
+    text-align: center;
+
+    border-radius: 2.5px;
+    cursor: pointer;
+
+    color: #fff;
+
+    transition: .3s ease-out;
+
+}   section.cta button:hover {
+    letter-spacing: 2px;
+}
+
+section.news {
+    width: 100%;
+    height: auto;
+
+    padding: 30px 30px 50px 30px;
+
+}   section.news h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}   section.news .links {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 5px;
+
+}   section.news .links a {
+    position: relative;
+    color: blue;
+    transition: .3s ease-out;
+
+}   section.news .links a::before {
+    position: absolute;
+    content: "";
+
+    width: 5%;
+    height: 2px;
+
+    background-color: blue;
+
+    bottom: 0;
+    left: 0;
+
+    transition: .3s ease-out;
+
+}   section.news .links a:hover {
+    color: var(--highlight-color);
+
+}   section.news .links a:hover::before {
+    width: 100%;
+    background-color: var(--highlight-color);
+
+}
+
+section.tools {
+    width: 100%;
+    height: auto;
+
+    padding: 30px 30px 20px 30px;
+
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../assets/tools.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}   section.tools h6 {
+    font-size: 20px;
+
+}   section.tools p {
+    font-size: 15px;
+    font-weight: 200;
+
+}   section.tools button {
+    margin-top: 50px;
+
+    font-size: 18px;
+    cursor: pointer;
+
+    border-radius: 2.5px;
+
+    border: none;
+    outline: none;
+
+    padding: 10px;
+    text-align: center;
+
+    background-color: var(--highlight-color);
+    color: #fff;
+
+    font-weight: 500;
+    transition: .3s ease-out;
+
+}   section.tools button:hover  {
+    background-color: blue;
+}
+
+section {
+    height: 100svh;
+}
+
+/* Responsive */
+@media only screen and (max-width: 540px) {
+    section.hero p {
+        width: 345px;
+        text-align: center;
+
+    }   section.intro {
+        padding: 50px 10px 50px 10px;
+
+    }   section.intro p img {
+        margin: 0;
+        width: 100%;
+
+    }   section.cta {
+        padding: 30px 10px 50px 10px;
+
+    }   section.news {
+        padding: 30px 10px 50px 10px;
+        
+
+    }   section.tools {
+        padding: 30px 10px 30px 10px;
+        
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    section.cta .buttons button {
+        width: 100%;
+
+    }   section.tools button {
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 460px) {
+    section.news .links a {
+        font-size: 12px;
+    }
+    
+}

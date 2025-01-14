@@ -1,0 +1,188 @@
+/* Sections */
+section.hero {
+    position: relative;
+
+    width: 100%;
+    height: 100svh;
+
+    background: transparent;
+    /* background-color: #000000;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/live.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+}   section.hero iframe {
+    position: absolute;
+    user-select: none;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+}   section.hero .header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: #000000;
+
+    z-index: 15;
+
+}   section.hero .content {
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}   section.hero h2 {
+    font-size: 35px;
+    margin-top: 20px;
+
+    letter-spacing: 3.5px;
+
+    text-align: center;
+    transition: all .3s ease-out;
+
+}   section.hero p {
+    font-size: 15px;
+    letter-spacing: normal;
+
+    text-align: center;
+    transition: all .3s ease-out;
+
+}   section.hero button {
+    font-size: 18px;
+    margin-top: 20px;
+
+    outline: none;
+    border: none;
+
+    padding: 10px;
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+
+    transition: all .3s ease-out;
+
+}   section.hero button:hover {
+    background-color: blue;
+}
+
+@media only screen and (max-width: 500px) {
+    section.hero {
+        justify-content: flex-start;
+
+    }   section.hero .content {
+        margin-top: 100px;
+    }
+    
+}
+@media only screen and (max-width: 360px) {
+    section.hero .content h2 {
+        font-size: 28px;
+
+    }   section.hero .content p {
+        font-size: 12px;
+    }
+    
+}
+
+section.con {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    
+    padding: 30px;
+    gap: 30px;
+
+}   section.con .block {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+}   section.con .block ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+}   section.con .block ul li {
+    font-size: 15px;
+
+}   section.con h2 {
+    width: 100%;
+    height: auto;
+
+    padding: 10px;
+    background-color: #252525;
+
+    border-radius: 2.5px;
+    user-select: text;
+
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}   section.con .block.live .links {
+    width: 100%;
+    height: auto;
+
+    padding: 10px 0 10px 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    font-size: 15px;
+
+}   section.con .block.live .links a {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 5px;
+
+    font-size: 15px;
+    color: var(--highlight-color);
+
+    transition: .3s ease-out;
+
+}   section.con .block.live .links a::before {
+    position: relative;
+    display: block;
+
+    content: "→";
+    font-size: 15px;
+
+}   section.con .block.live .links a:hover {
+    gap: 15px;
+
+}
