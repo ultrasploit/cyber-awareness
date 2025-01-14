@@ -117,7 +117,7 @@ header nav ul {
     position: absolute;
     content: "";
 
-    width: 5%;
+    width: 8px;
     height: 2px;
 
     background-color: #fff;
